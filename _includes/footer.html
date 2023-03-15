@@ -40,20 +40,23 @@
   // }
 
   window.onload = function(){
+      // force redirect to docs.anthology.com
+          window.location.replace("http://docs.anthology.com");
+
         // This modifies dynamically the menu height based on the content height
-        var menu = document.getElementsByClassName('menu');
-        var mainSize = document.getElementsByTagName("main");
+        //var menu = document.getElementsByClassName('menu');
+        //var mainSize = document.getElementsByTagName("main");
 
-        mainSize = mainSize[0].offsetHeight;
-        mainSize = 200 + mainSize;
+        //mainSize = mainSize[0].offsetHeight;
+        //mainSize = 200 + mainSize;
 
-        menu[0].style.minHeight = mainSize + "px";
+        //menu[0].style.minHeight = mainSize + "px";
         
         // Need to resize the whole content when no toc
-        var pageToc = "{{ page.toc }}";
-        pageToc = pageToc.toLowerCase();
-        var bodyMainContent = document.getElementsByClassName('maincontent');
-        var toc = document.getElementsByClassName('toc-parent');
+        //var pageToc = "{{ page.toc }}";
+        //pageToc = pageToc.toLowerCase();
+        //var bodyMainContent = document.getElementsByClassName('maincontent');
+        //var toc = document.getElementsByClassName('toc-parent');
 
 if(pageToc == 'false'){
     toc[0].style.display = 'none';
