@@ -47,8 +47,8 @@
 
       console.log("URL PATHNAME: " + url.pathname); // => '/path/index.html'
       console.log("TARGET URL: " + targetURL.origin + url.pathname);
-      
-      window.location.replace("http://docs.anthology.com");
+      window.location.replace(targetURL.origin + url.pathname);
+      // window.location.replace("http://docs.anthology.com");
 
         // This modifies dynamically the menu height based on the content height
         //var menu = document.getElementsByClassName('menu');
