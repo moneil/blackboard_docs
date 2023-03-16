@@ -41,12 +41,12 @@
 
   window.onload = function(){
       // force redirect to docs.anthology.com
-      console.log("HREF" + window.location.href)
+      //console.log("HREF" + window.location.href)
       const url = new URL(window.location.href);
       const targetURL = new URL('http://docs.anthology.com')
 
-      console.log("URL PATHNAME: " + url.pathname); // => '/path/index.html'
-      console.log("TARGET URL: " + targetURL.origin + url.pathname);
+      //console.log("URL PATHNAME: " + url.pathname); // => '/path/index.html'
+      //console.log("TARGET URL: " + targetURL.origin + url.pathname);
       window.location.replace(targetURL.origin + url.pathname);
       // window.location.replace("http://docs.anthology.com");
 
