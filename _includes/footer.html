@@ -41,7 +41,13 @@
 
   window.onload = function(){
       // force redirect to docs.anthology.com
-          window.location.replace("http://docs.anthology.com");
+      const url = new url(window.location.href);
+      const targetURL = new URL('http://docs.anthology.com')
+
+      console.log("URL PATHNAME: " + url.pathname); // => '/path/index.html'
+      console.log("TARGET URL: " + targetURL.origin + url.pathname);
+      
+      window.location.replace("http://docs.anthology.com");
 
         // This modifies dynamically the menu height based on the content height
         //var menu = document.getElementsByClassName('menu');
