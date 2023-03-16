@@ -41,7 +41,8 @@
 
   window.onload = function(){
       // force redirect to docs.anthology.com
-      const url = new url(window.location.href);
+      console.log("HREF" + window.location.href)
+      const url = new URL(window.location.href);
       const targetURL = new URL('http://docs.anthology.com')
 
       console.log("URL PATHNAME: " + url.pathname); // => '/path/index.html'
